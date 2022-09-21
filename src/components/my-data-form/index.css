@@ -1,0 +1,25 @@
+.root {
+   display: flex;
+   flex-direction: column;
+   color: #25316D;
+}
+
+.button {
+   width: 100%;
+   padding: 20px;
+   border: none;
+   border-radius: 25px;
+   font-size: 20px;
+   font-weight: bold;
+   color: #25316D;
+   font-family: "Poppins";
+   background-color: #97D2EC;
+   margin-top: 20px;
+   transition: all 500ms;
+   cursor: pointer;
+}
+
+.button:hover {
+   background-color: #5f96ad;
+
+}

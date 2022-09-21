@@ -1,0 +1,7 @@
+.root{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   color: #25316D;
+}

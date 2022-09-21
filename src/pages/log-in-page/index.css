@@ -1,0 +1,12 @@
+.root {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20%;
+}
+
+@media (min-width:960px) {
+   .root {
+      margin-top: 100px;
+   }
+}

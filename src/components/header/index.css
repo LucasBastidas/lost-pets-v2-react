@@ -1,0 +1,25 @@
+.root{
+   display: flex;
+   justify-content: space-between;
+   background-color: #25316D;
+   width: 100%;
+   padding: 0px 5px 0px 5px;
+}
+
+.logo{
+   width: 90px;
+   height: 90px;
+   cursor:pointer
+}
+
+.menu-cont{
+   display: flex;
+   align-items: center;
+}
+
+.menu{
+   width: 40px;
+   height: 45px;
+   cursor: pointer;
+}
+

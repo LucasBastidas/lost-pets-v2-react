@@ -1,0 +1,109 @@
+.form-cont-active {
+   display: flex;
+   position: fixed;
+   background-color: #25316df0;
+   width: 100%;
+   justify-content: center;
+   height: 100%;
+   top: 0px;
+   color: #FEF5AC;
+   align-items: center;
+   animation: openAnim 1s ease 0s 1 normal forwards;
+}
+
+.form-cont-inactive {
+   display: none;
+}
+
+.close-button {
+   position: absolute;
+   cursor: pointer;
+   right: 20px;
+   top: 25px;
+   font-size: 25px;
+}
+
+
+@keyframes openAnim {
+   0% {
+      animation-timing-function: ease-in;
+      opacity: 0;
+      transform: scale(0);
+   }
+
+   38% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: scale(1);
+   }
+
+   55% {
+      animation-timing-function: ease-in;
+      transform: scale(0.7);
+   }
+
+   72% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+   }
+
+   81% {
+      animation-timing-function: ease-in;
+      transform: scale(0.84);
+   }
+
+   89% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+   }
+
+   95% {
+      animation-timing-function: ease-in;
+      transform: scale(0.95);
+   }
+
+   100% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+   }
+}
+
+/* .form {} */
+
+.input {
+   width: 100%;
+   padding: 10px 5px;
+   font-size: 12px;
+   font-family: "Poppins";
+   border: none;
+   border-radius: 25px;
+}
+
+.text-area {
+   width: 100%;
+   font-size: 12px;
+   font-family: "Poppins";
+   border: none;
+   border-radius: 25px;
+   padding: 5px 10px;
+}
+
+/* .button-cont {} */
+
+.button {
+   width: 100%;
+   padding: 20px;
+   border: none;
+   border-radius: 25px;
+   font-size: 20px;
+   font-weight: bold;
+   color: #25316D;
+   font-family: "Poppins";
+   background-color: #97D2EC;
+   cursor: pointer;
+   transition: all 1s;
+}
+
+.button:hover {
+   background-color: #5f96ad;
+}

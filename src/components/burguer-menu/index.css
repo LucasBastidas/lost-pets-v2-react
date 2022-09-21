@@ -1,0 +1,80 @@
+.root {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   display: flex;
+   flex-direction: column;
+   background-color: #25316dd4;
+   ;
+   align-content: flex-end;
+   width: 100%;
+   height: 100%;
+   align-items: center;
+   text-align: center;
+   justify-content: space-around;
+   animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@media (min-width:960px) {
+   .root {
+      top: 0px;
+      left: auto;
+      right: 0px;
+      width: 20%;
+      height: 70%;
+      border-radius: 0 25px 0 25px;
+      background-color: #25316dd4;
+      ;
+   }
+
+
+}
+
+.root p {
+   cursor: pointer;
+   color: #FEF5AC;
+}
+
+.close-button {
+   position: absolute;
+   right: 20px;
+   font-size: 25px;
+   top: 20px;
+   cursor: pointer;
+   color: #FEF5AC;
+}
+
+@media (min-width:960px) {
+   .close-button {
+      font-size: 22px;
+      top: 60px;
+   }
+}
+
+@keyframes myAnim {
+   0% {
+      opacity: 0;
+      transform: rotateX(70deg);
+      transform-origin: top;
+   }
+
+   100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+      transform-origin: top;
+   }
+}
+
+@keyframes myAnim2 {
+   0% {
+      opacity: 1;
+      transform: rotateX(0deg);
+      transform-origin: top;
+   }
+
+   100% {
+      opacity: 0;
+      transform: rotateX(70deg);
+      transform-origin: top;
+   }
+}

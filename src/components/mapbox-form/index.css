@@ -1,0 +1,44 @@
+.input {
+   width: 100%;
+   padding: 20px 5px;
+   font-size: 16px;
+   font-family: "Poppins";
+   border: none;
+   border-radius: 25px;
+}
+
+.input-button-cont {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+
+}
+
+.button {
+   padding: 10px 20px;
+   border: none;
+   width: 80%;
+   border-radius: 25px;
+   margin-top: 10px;
+   cursor: pointer;
+   background-color: #5F6F94;
+   color: #25316D;
+   font-weight: bold;
+   transition: all 500ms;
+}
+
+.button:hover {
+   background-color: #303d59;
+   color: #FEF5AC;
+
+}
+
+.map-cont {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}

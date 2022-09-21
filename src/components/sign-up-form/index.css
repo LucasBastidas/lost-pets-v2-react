@@ -1,0 +1,30 @@
+.root{
+   display: flex;
+   flex-direction: column;
+   color: #25316D;
+}
+
+.input{
+   width: 100%;
+   padding: 20px 5px;
+   font-size: 16px;
+   font-family: "Poppins";
+   border: none;
+   border-radius: 25px;
+}
+
+.button{
+   width: 100%;
+   padding: 20px;
+   border: none;
+   border-radius: 25px;
+   font-size: 20px;
+   font-weight: bold;
+   color: #25316D;
+   font-family: "Poppins";
+   background-color: #97D2EC;
+   margin-top: 20px;
+}
+.wrong-password{
+   text-align: center;
+}

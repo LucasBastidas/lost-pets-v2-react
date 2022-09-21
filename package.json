@@ -1,0 +1,41 @@
+{
+  "name": "lost-pets-app-v2-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lucas Bastidas <lucaasbastidas@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "@types/node": "^18.7.14",
+    "@types/react": "^18.0.18",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "dropzone": "^6.0.0-beta.2",
+    "file-loader": "^6.2.0",
+    "live-server": "^1.2.2",
+    "mapbox-gl": "^2.10.0",
+    "react": "^18.2.0",
+    "react-burger-menu": "^3.0.8",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.2",
+    "react-map-gl": "^7.0.19",
+    "react-mapbox-gl": "^5.1.1",
+    "react-router-dom": "^6.3.0",
+    "react-simple-dropzone": "^1.0.20",
+    "recoil": "^0.7.5",
+    "style-loader": "^3.3.1",
+    "sweetalert2": "^11.4.32",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "url-loader": "^4.1.1"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack",
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "live-server"
+  }
+}

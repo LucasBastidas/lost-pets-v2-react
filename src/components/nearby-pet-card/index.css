@@ -1,0 +1,99 @@
+.root {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: none;
+   border-radius: 40px 5px;
+   background-color: #5F6F94;
+   width: 312px;
+   height: 400px;
+   box-shadow: 7px 10px 15px 1px #25316D;
+   color: #25316D;
+}
+
+@media (min-width:960px) {
+   .root {
+      width: 320px;
+   }
+}
+
+/* .root:hover{
+   transition: 3s all;
+   transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(360deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+} */
+
+.image-cont {
+   width: 100%;
+   height: 60%;
+   overflow: hidden;
+}
+
+.image {
+   width: 100%;
+   height: 100%;
+   border-radius: 40px 5px;
+}
+
+.ubi-and-description-cont {
+   padding-left: 4px;
+   padding-right: 4px;
+}
+
+/* .ubication-cont {} */
+
+/* .description-cont {} */
+
+/* @media (min-width:960px) {
+   .description-cont{
+      display: none;
+   }
+   
+   .root:hover .description-cont{
+      transition: 1s all;
+      display: block;
+   }
+} */
+.hover {
+   display: none;
+}
+
+.no-hover {
+   display: none;
+}
+
+.buttons-cont {
+   display: flex;
+}
+
+@media (min-width:960px) {
+
+   .button-cont {
+      display: none;
+   }
+
+   .hover {
+      display: none;
+      background-color: #25316D;
+      height: 400px;
+      width: 330px;
+      position: absolute;
+      border-radius: 40px 5px;
+   }
+
+   .no-hover {
+      display: none;
+
+   }
+
+   .root:hover .hover {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .root:hover .buttons-cont {
+      display: flex;
+
+   }
+}

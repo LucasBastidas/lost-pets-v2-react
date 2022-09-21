@@ -1,0 +1,18 @@
+.root {
+   background-color: #97D2EC;
+   padding: 10px 45px;
+   border: none;
+   border-radius: 45px;
+   text-align: center;
+   font-size: 20px;
+   margin: 0 auto;
+   color: #25316D;
+   font-weight: bold;
+   margin-bottom: 5px;
+   cursor: pointer;
+   transition: all 500ms;
+}
+
+.root:hover {
+   background-color: #5f96ad;
+}

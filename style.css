@@ -1,0 +1,80 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   background-color: #FEF5AC;
+   font-family: "Poppins";
+}
+
+.spinner-cont{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+}
+.spinner {
+   width: 17.6px;
+   height: 17.6px;
+   border-radius: 17.6px;
+   box-shadow: 44px 0px 0 0 rgba(37,49,109,0.2), 35.6px 26px 0 0 rgba(37,49,109,0.4), 13.64px 41.8px 0 0 rgba(37,49,109,0.6), -13.64px 41.8px 0 0 rgba(37,49,109,0.8), -35.6px 26px 0 0 #25316d;
+   animation: spinner-b87k6z 0.8s infinite linear;
+}
+
+@keyframes spinner-b87k6z {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+input{
+   font-family: "Poppins";
+}
+
+button{
+   font-family: "Poppins";
+}
+
+textarea{
+   font-family: "Poppins";
+}
+
+/* .dz-details{
+   display: none;
+}
+.dz-progress{
+   display: none;
+}
+.dz-error-message{
+   display: none;
+}
+.dz-error-mark{
+   display: none;
+}
+.dz-success-mark{
+   display: none;
+}
+
+.dz-image{
+   width: 100%;
+}
+
+.dz-image >img{
+   width: 100%;
+   height: 250px;
+} */
+
+.mapboxgl-canvas{
+   border-radius: 25px;
+}
+
+.mapboxgl-ctrl-attrib-inner{
+   display: none;
+}
+
+.mapboxgl-ctrl-attrib-button{
+   display: none;
+}

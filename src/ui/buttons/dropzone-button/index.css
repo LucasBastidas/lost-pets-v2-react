@@ -1,0 +1,23 @@
+.button-cont {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.button {
+   padding: 10px 20px;
+   border: none;
+   width: 80%;
+   border-radius: 25px;
+   margin-top: 10px;
+   cursor: pointer;
+   background-color: #5F6F94;
+   color: #25316D;
+   font-weight: bold;
+   transition: all 500ms;
+}
+
+.button:hover {
+   background-color: #303d59;
+   color: #FEF5AC;
+}
