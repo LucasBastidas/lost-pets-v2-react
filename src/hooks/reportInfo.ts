@@ -21,7 +21,8 @@ export async function useGetReportEmail(id) {
 	return res;
 }
 
-export async function useSendReport(name, tel, message, petReported, petEmail) {
+export async function useSendReport(name, tel, message, petReported, id) {
+	const petEmail = await getReportPetEmail(id);
 	const res = await sendReportPetEmail(
 		name,
 		tel,
