@@ -21,10 +21,8 @@ export function AppRouter() {
 	const [newToken, setNewToken] = useRecoilState(tokenState);
 	useEffect(() => {
 		// console.log(token);
-
 		if (token) {
 			// console.log("estoy logeado, soy router");
-
 			setLoggedState({ logged: true });
 			getUserData(token, email).then((userData) => {
 				setData({ name: userData.fullName, id: userData.id });

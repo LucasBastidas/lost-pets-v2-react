@@ -13,6 +13,7 @@ export function BurgerMenuComp({
 }) {
 	// const [activeMenu, setActiveMenu] = useState(true);
 
+	//ME DICE SI ESTOY LOGEADO O NO
 	const logged = useLoginValue();
 
 	const email = localStorage.getItem("email");

@@ -1,6 +1,5 @@
 import { atom, useRecoilValue, useSetRecoilState } from "recoil";
 import { signUp } from "lib/logInSignUp";
-import { getToken } from "lib/logInSignUp";
 
 //SE USA PARA SABER SI HAY NUEVO EMAIL PARA REGISTRAR
 const newEmailState = atom({

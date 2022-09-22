@@ -1,28 +1,22 @@
 import React, { useState, useEffect, Suspense } from "react";
-import { getReportPetEmail, sendReportPetEmail } from "lib";
 import { NearbyPetCard } from "components/nearby-pet-card";
 import { useNearbyPets } from "hooks/nearbyPets";
 import { ReportInfoForm } from "components/report-info-form";
 import css from "./index.css";
-import {
-	useGetReportEmail,
-	usePetEmail,
-	useSendReport,
-	useSetPetEmail,
-} from "hooks/reportInfo";
+import { useSendReport } from "hooks/reportInfo";
 import { useSwal } from "ui/alert";
+import { useNavigate } from "react-router-dom";
 
 export function NearbyPetsList() {
 	const nearbyPets = useNearbyPets();
 	const [load, setLoad] = useState(false);
-	const [petId, setPetId] = useState(null);
+	const [userId, setUserId] = useState(null);
 	const [formStatus, setFormStatus] = useState(false);
-	const [petReportName, setPetReportName] = useState({ name: "" });
-	const setEmail = useSetPetEmail();
-	const petEmail = usePetEmail();
-	//ABRE EL FORM Y OBTIENE EL ID DE LA PET
-	async function openForm(id, petName) {
-		setPetId(id);
+	const [petReportName, setPetReportName] = useState("");
+	const navigate = useNavigate();
+	//ABRE EL FORM Y OBTIENE EL ID DEL USUARIO
+	async function openForm(userId, petName) {
+		setUserId(userId);
 		setFormStatus(true);
 		setPetReportName(petName);
 	}
@@ -33,17 +27,17 @@ export function NearbyPetsList() {
 	}
 
 	//ENVIA EL EMAIL
-	function handleForm(formData) {
+	async function handleForm(formData) {
 		const tel = formData.tel;
 		const message = formData.description;
 		const name = formData.name;
 		if (name != "" || tel != "" || message != "") {
 			setLoad(true);
-			useSendReport(name, tel, message, petReportName, petId).then(() => {
-				console.log("ok");
+			useSendReport(name, tel, message, petReportName, userId).then(() => {
 				useSwal("Hecho", "El reporte se envío correctamente", "success").then(
 					() => {
 						closeForm();
+						setLoad(false);
 					}
 				);
 			});
@@ -66,6 +60,7 @@ export function NearbyPetsList() {
 							name={pet.name}
 							description={pet.description}
 							id={pet.objectID}
+							userId={pet["user_id"]}
 							key={pet.objectID}
 							ubication={pet.ubication}
 							picture={pet.imageUrl}

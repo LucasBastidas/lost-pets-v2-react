@@ -19,6 +19,6 @@ export async function usePostNewReport(
 		lng,
 		ubication
 	);
-	console.log("soy res:", res);
+	// console.log("soy res:", res);
 	return res;
 }

@@ -23,7 +23,7 @@ export function ReportNewPetForm() {
 
 	useEffect(() => {
 		if (token) {
-			console.log("me quedo");
+			// console.log("me quedo");
 		} else {
 			navigate("/");
 		}

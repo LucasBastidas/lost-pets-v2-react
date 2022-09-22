@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HomeButton } from "ui/buttons/home-button";
 import css from "./index.css";
-import { NearbyPetsList } from "components/nearby-pets-list";
 
 export function HomePage() {
 	return (

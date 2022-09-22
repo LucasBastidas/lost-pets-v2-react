@@ -52,6 +52,5 @@ export async function sendReportPetEmail(
 		}),
 	});
 	const emailReportData = await emailReport.json();
-	console.log(emailReportData);
 	return emailReportData;
 }

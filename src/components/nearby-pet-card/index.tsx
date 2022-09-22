@@ -5,6 +5,7 @@ export function NearbyPetCard({
 	name,
 	description,
 	id,
+	userId,
 	picture,
 	ubication,
 	lost,
@@ -13,7 +14,9 @@ export function NearbyPetCard({
 	return (
 		<div id={id} className={css.root}>
 			<div className={lost == "false" ? css["no-hover"] : css.hover}>
-				<ReportInfoButton action={() => onAction(id, name)}></ReportInfoButton>
+				<ReportInfoButton
+					action={() => onAction(userId, name)}
+				></ReportInfoButton>
 			</div>
 			<div className={css["image-cont"]}>
 				<img className={css.image} src={picture} alt="pet-picture" />

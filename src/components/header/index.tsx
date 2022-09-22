@@ -10,9 +10,11 @@ import { useSetPathState } from "hooks/path";
 export function HeaderComp(props) {
 	const [activeMenu, setActiveMenu] = useState(false);
 
+	//AVISA SI ESTOY LOGEADO O NO
 	const loginState = useLoginValue();
+	//SETEA QUE ESTOY LOGEADO O NO
 	const setLoginState = useSetLoginState();
-
+	//SETEA EL PATH
 	const setPathState = useSetPathState();
 
 	const navigate = useNavigate();

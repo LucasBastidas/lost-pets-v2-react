@@ -24,6 +24,5 @@ export async function useUpdatePassword(newPassword: string, token) {
 export async function useUpdatePasswordAndName(newPassword, newName, token) {
 	const newNameRes = await useUpdateName(newName, token);
 	const newPasswordRes = await updatePassword(newPassword, token);
-	console.log({ newNameRes, newPasswordRes });
 	return { newNameRes, newPasswordRes };
 }

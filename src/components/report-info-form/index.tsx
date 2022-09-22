@@ -8,7 +8,9 @@ export function ReportInfoForm({ active, onClose, onForm, load }) {
 		const name = target.name.value;
 		const tel = target.tel.value;
 		const description = target.description.value;
-		onForm({ name, tel, description });
+		onForm({ name, tel, description }).then(() => {
+			e.target.reset();
+		});
 	}
 	return (
 		<div

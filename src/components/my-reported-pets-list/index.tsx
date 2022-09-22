@@ -77,7 +77,7 @@ export function MyReportedPetsList() {
 			lng = ubicationData.lng;
 			ubication = ubicationData.ubication;
 		}
-		console.log({ name, description, url, lat, lng, ubication });
+		// console.log({ name, description, url, lat, lng, ubication });
 		useUpdateMyReportedPet(
 			token,
 			petId,
