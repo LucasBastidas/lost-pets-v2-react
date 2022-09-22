@@ -10,18 +10,15 @@ import {
 import { checkUserEmail, getToken } from "lib/logInSignUp";
 
 export async function useLogIn(emailParam) {
-	// const [email, setMyEmail] = useRecoilState(myEmail);
 	const res = await checkUserEmail(emailParam);
 	if (res == null) {
-		console.log("es null(no registrado)", res);
-		// setMyEmail({ email: res, registrado: false });
+		// console.log("es null(no registrado)", res);
 		return {
 			registrado: false,
 			email: res,
 		};
 	} else {
-		console.log("es email registrado", res);
-		// setMyEmail({ email: res, registrado: true });
+		// console.log("es email registrado", res);
 		return {
 			registrado: true,
 			email: res,

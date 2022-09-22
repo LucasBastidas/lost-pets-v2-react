@@ -14,10 +14,10 @@ export async function checkUserEmail(email) {
 	const data = await emailCheck.json();
 	// console.log(data);
 	if (data.user === null) {
-		console.log("no registrado");
+		// console.log("no registrado");
 		return data.user;
 	} else {
-		console.log("SI REGISTRADO");
+		// console.log("SI REGISTRADO");
 		return data.user.email;
 	}
 }
