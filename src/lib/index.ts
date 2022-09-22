@@ -17,9 +17,7 @@ export async function getNearbyPets(myLoc) {
 export async function getReportPetEmail(id) {
 	const user = await fetch(API_SERVER + "/users", {
 		headers: {
-			Accept: "application/json, text/plain, */*",
 			"Access-Control-Allow-Origin": "*",
-			"Access-Control-Allow-Methods": "*",
 			"content-type": "application/json",
 		},
 		method: "POST",
@@ -41,9 +39,7 @@ export async function sendReportPetEmail(
 ) {
 	const emailReport = await fetch(API_SERVER + "/send-email", {
 		headers: {
-			Accept: "application/json, text/plain, */*",
 			"Access-Control-Allow-Origin": "*",
-			"Access-Control-Allow-Methods": "*",
 			"content-type": "application/json",
 		},
 		method: "post",
@@ -57,4 +53,5 @@ export async function sendReportPetEmail(
 	});
 	const emailReportData = await emailReport.json();
 	console.log(emailReportData);
+	return emailReportData;
 }

@@ -32,3 +32,11 @@ export async function useSendReport(name, tel, message, petReported, id) {
 	);
 	return res;
 }
+
+const petName = atom({
+	key: "petName",
+	default: "",
+});
+
+export const usePetName = () => useRecoilValue(petName);
+export const useSetPetName = () => useSetRecoilState(petName);

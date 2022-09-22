@@ -47,18 +47,6 @@ export function NearbyPetsList() {
 					}
 				);
 			});
-			// useGetReportEmail(petId).then((email) => {
-			// 	// setEmail(email);
-			// 	// console.log("soy email:", email);
-			// 	useSendReport(name, tel, message, petReportName, email).then(() => {
-			// 		setLoad(false);
-			// 		useSwal("Hecho", "El reporte se envío correctamente", "success").then(
-			// 			() => {
-			// 				closeForm();
-			// 			}
-			// 		);
-			// 	});
-			// });
 		} else {
 			useSwal("Error", "No completaste todos los campos", "error");
 		}

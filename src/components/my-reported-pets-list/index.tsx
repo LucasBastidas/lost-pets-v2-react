@@ -89,7 +89,7 @@ export function MyReportedPetsList() {
 			ubication
 		).then(() => {
 			setLoad(false);
-			setDropzone(null);
+			setDropzone({ dropImage: null });
 			setMapbox(null);
 			useSwal(
 				"Hecho",
