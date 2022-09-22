@@ -20,6 +20,7 @@ export async function getReportPetEmail(id) {
 			Accept: "application/json, text/plain, */*",
 			"Access-Control-Allow-Origin": "*",
 			"Access-Control-Allow-Methods": "*",
+			"content-type": "application/json",
 		},
 		method: "POST",
 		body: JSON.stringify({
@@ -43,6 +44,7 @@ export async function sendReportPetEmail(
 			Accept: "application/json, text/plain, */*",
 			"Access-Control-Allow-Origin": "*",
 			"Access-Control-Allow-Methods": "*",
+			"content-type": "application/json",
 		},
 		method: "post",
 		body: JSON.stringify({
