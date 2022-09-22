@@ -22,7 +22,6 @@ export async function getReportPetEmail(id) {
 			"Access-Control-Allow-Methods": "*",
 		},
 		method: "POST",
-		mode: "cors",
 		body: JSON.stringify({
 			id: id,
 		}),
@@ -46,7 +45,6 @@ export async function sendReportPetEmail(
 			"Access-Control-Allow-Methods": "*",
 		},
 		method: "post",
-		mode: "cors",
 		body: JSON.stringify({
 			name: name,
 			tel: tel,
