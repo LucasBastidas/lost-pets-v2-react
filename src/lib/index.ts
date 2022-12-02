@@ -1,5 +1,5 @@
 //LLAMADAS A LA API
-const API_SERVER = "https://lost-pets-app-v1.herokuapp.com";
+const API_SERVER = "https://lost-pets-webapp-v1.onrender.com";
 
 //BUSCAR MASCOTAS PERDIDAS CERCANAS
 export async function getNearbyPets(myLoc) {

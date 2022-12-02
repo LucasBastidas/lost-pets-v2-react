@@ -1,6 +1,6 @@
 //OBTENER USERDATA
 export async function getUserData(token, email) {
-	const res = await fetch("https://lost-pets-app-v1.herokuapp.com/me", {
+	const res = await fetch("https://lost-pets-webapp-v1.onrender.com/me", {
 		method: "POST",
 		headers: {
 			"content-type": "application/json",

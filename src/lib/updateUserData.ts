@@ -1,4 +1,4 @@
-const API_SERVER = "https://lost-pets-app-v1.herokuapp.com";
+const API_SERVER = "https://lost-pets-webapp-v1.onrender.com";
 //CAMBIA EL NOMBRE EN LA DB
 export async function updateName(newName: string, token: string) {
 	const nameChange = await fetch(API_SERVER + "/me/update", {
